@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace P5
+namespace P6
 {
     public partial class FormMain : Form
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace P5.Properties
+namespace P6.Properties
 {
 
 

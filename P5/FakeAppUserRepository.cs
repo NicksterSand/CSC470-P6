@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace P5
+namespace P6
 {
     public class FakeAppUserRepository : IAppUserRepository
     {
@@ -17,6 +17,14 @@ namespace P5
                 FirstName = "Dave",
                 LastName = "Bishop",
                 EmailAddress = "david.b.bishop@gmail.com",
+                IsAuthenticated = false
+            });
+            _AppUsers.Add("a", new AppUser {
+                UserName = "a",
+                Password = "a",
+                FirstName = "Andrew",
+                LastName = "Anderson",
+                EmailAddress = "a@a.a",
                 IsAuthenticated = false
             });
         }

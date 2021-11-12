@@ -1,4 +1,4 @@
-﻿namespace P5
+﻿namespace P6
 {
     partial class FormRemoveProject
     {
