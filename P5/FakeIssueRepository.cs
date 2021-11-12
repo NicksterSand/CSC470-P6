@@ -57,7 +57,7 @@ namespace P6 {
             Dictionary<string, int> dict = new Dictionary<string, int>();
             for (int i = 0; i < _Issues.Count; i++) {
                 if (_Issues[i].ProjectId == ProjectId) {
-                    string month = $"{_Issues[i].DiscoveryDate.Year} - {_Issues[i].DiscoveryDate.Month}"
+                    string month = $"{_Issues[i].DiscoveryDate.Year} - {_Issues[i].DiscoveryDate.Month}";
                     if (dict.ContainsKey(month)) {
                         dict[month] += 1;
                     } else {

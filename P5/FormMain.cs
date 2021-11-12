@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using System;
 
 namespace P6
 {
@@ -82,6 +83,14 @@ namespace P6
         private void preferencesRemoveProjectToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             FormRemoveProject form = new FormRemoveProject(_CurrentAppUser);
+            form.ShowDialog();
+            form.Dispose();
+        }
+
+        private void issuesDashboardToolStripMenuItem_Click(object sender, System.EventArgs e) {
+            FakePreferenceRepository preferenceRepository = new FakePreferenceRepository();
+            int projectId = Int32.Parse(preferenceRepository.GetPreference(_CurrentAppUser.UserName, FakePreferenceRepository.PREFERENCE_PROJECT_ID));
+            FormIssueDashboard form = new FormIssueDashboard(projectId);
             form.ShowDialog();
             form.Dispose();
         }
