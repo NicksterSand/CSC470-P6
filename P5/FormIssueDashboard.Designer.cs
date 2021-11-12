@@ -1,5 +1,5 @@
 ﻿
-namespace Builder {
+namespace P6 {
     partial class FormIssueDashboard {
         /// <summary>
         /// Required designer variable.
@@ -112,6 +112,7 @@ namespace Builder {
             this.Controls.Add(this.LabelIssueNumberText);
             this.Name = "FormIssueDashboard";
             this.Text = "Issue Dashboard";
+            this.Load += new System.EventHandler(this.FormIssueDashboard_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

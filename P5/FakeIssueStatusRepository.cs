@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace P6 {
     class FakeIssueStatusRepository : IIssueStatusRepository {
-        private List<IssueStatus> IssueStatuses;
+        private static List<IssueStatus> _IssueStatuses = new List<IssueStatus>();
         public void Add(int Id, string value) {
             throw new NotImplementedException();
         }
