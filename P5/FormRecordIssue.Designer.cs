@@ -1,5 +1,5 @@
 ﻿
-namespace Builder {
+namespace P6 {
     partial class FormRecordIssue {
         /// <summary>
         /// Required designer variable.
@@ -178,6 +178,7 @@ namespace Builder {
             this.buttonCreate.TabIndex = 14;
             this.buttonCreate.Text = "Create Issue";
             this.buttonCreate.UseVisualStyleBackColor = true;
+            this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
             // 
             // buttonCancel
             // 
@@ -214,6 +215,7 @@ namespace Builder {
             this.Controls.Add(this.label1);
             this.Name = "FormRecordIssue";
             this.Text = "FormRecordIssue";
+            this.Load += new System.EventHandler(this.FormRecordIssue_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -64,7 +64,6 @@
             this.testToolStripMenuItem});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStripMain.Size = new System.Drawing.Size(1117, 28);
             this.menuStripMain.TabIndex = 0;
             this.menuStripMain.Text = "menuStripMain";
@@ -132,6 +131,7 @@
             this.issuesRecordToolStripMenuItem.Name = "issuesRecordToolStripMenuItem";
             this.issuesRecordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.issuesRecordToolStripMenuItem.Text = "&Record";
+            this.issuesRecordToolStripMenuItem.Click += new System.EventHandler(this.issuesRecordToolStripMenuItem_Click);
             // 
             // issuesModifyToolStripMenuItem
             // 
@@ -226,7 +226,7 @@
             this.ClientSize = new System.Drawing.Size(1117, 675);
             this.Controls.Add(this.menuStripMain);
             this.MainMenuStrip = this.menuStripMain;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.FormMain_Load);

@@ -94,5 +94,13 @@ namespace P6
             form.ShowDialog();
             form.Dispose();
         }
+
+        private void issuesRecordToolStripMenuItem_Click(object sender, EventArgs e) {
+            FakePreferenceRepository preferenceRepository = new FakePreferenceRepository();
+            int projectId = Int32.Parse(preferenceRepository.GetPreference(_CurrentAppUser.UserName, FakePreferenceRepository.PREFERENCE_PROJECT_ID));
+            FormRecordIssue form = new FormRecordIssue(projectId);
+            form.ShowDialog();
+            form.Dispose();
+        }
     }
 }
