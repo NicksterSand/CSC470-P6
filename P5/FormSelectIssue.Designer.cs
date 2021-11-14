@@ -55,7 +55,7 @@ namespace P6 {
             this.dataGridViewSelector.ReadOnly = true;
             this.dataGridViewSelector.RowHeadersWidth = 51;
             this.dataGridViewSelector.RowTemplate.Height = 24;
-            this.dataGridViewSelector.Size = new System.Drawing.Size(959, 416);
+            this.dataGridViewSelector.Size = new System.Drawing.Size(1030, 416);
             this.dataGridViewSelector.TabIndex = 0;
             // 
             // Id
@@ -117,7 +117,7 @@ namespace P6 {
             // buttonSelectIssue
             // 
             this.buttonSelectIssue.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonSelectIssue.Location = new System.Drawing.Point(826, 470);
+            this.buttonSelectIssue.Location = new System.Drawing.Point(897, 470);
             this.buttonSelectIssue.Name = "buttonSelectIssue";
             this.buttonSelectIssue.Size = new System.Drawing.Size(150, 37);
             this.buttonSelectIssue.TabIndex = 1;
@@ -128,7 +128,7 @@ namespace P6 {
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(649, 470);
+            this.buttonCancel.Location = new System.Drawing.Point(726, 470);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(150, 37);
             this.buttonCancel.TabIndex = 2;
@@ -141,7 +141,7 @@ namespace P6 {
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(995, 537);
+            this.ClientSize = new System.Drawing.Size(1059, 537);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSelectIssue);
             this.Controls.Add(this.dataGridViewSelector);

@@ -31,7 +31,7 @@ namespace P6 {
                 DialogResult = DialogResult.OK;
                 Close();
             } else {
-                MessageBox.Show("Please select a row.");
+                MessageBox.Show("No row was selected.");
             }
         }
     }

@@ -1,5 +1,5 @@
 ﻿
-namespace Builder {
+namespace P6 {
     partial class FormModifyIssue {
         /// <summary>
         /// Required designer variable.
@@ -60,6 +60,7 @@ namespace Builder {
             this.buttonModify.TabIndex = 30;
             this.buttonModify.Text = "Modify Issue";
             this.buttonModify.UseVisualStyleBackColor = true;
+            this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
             // 
             // textBoxInitialDescription
             // 
@@ -213,6 +214,7 @@ namespace Builder {
             this.Controls.Add(this.label1);
             this.Name = "FormModifyIssue";
             this.Text = "Modify Issue";
+            this.Load += new System.EventHandler(this.FormModifyIssue_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

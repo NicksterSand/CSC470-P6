@@ -120,5 +120,20 @@ namespace P6
             }
             form.Dispose();
         }
+
+        private void issuesModifyToolStripMenuItem_Click(object sender, EventArgs e) {
+            FakePreferenceRepository preferenceRepository = new FakePreferenceRepository();
+            FakeIssueRepository issueRepository = new FakeIssueRepository();
+            int projectId = Int32.Parse(preferenceRepository.GetPreference(_CurrentAppUser.UserName, FakePreferenceRepository.PREFERENCE_PROJECT_ID));
+            FormSelectIssue form = new FormSelectIssue(projectId);
+            form.ShowDialog();
+            if(form.DialogResult == DialogResult.OK) {
+                Issue selectedIssue = form._SelectedIssue;
+                FormModifyIssue modifyForm = new FormModifyIssue(selectedIssue);
+                modifyForm.ShowDialog();
+                modifyForm.Dispose();
+            }
+            form.Dispose();
+        }
     }
 }
