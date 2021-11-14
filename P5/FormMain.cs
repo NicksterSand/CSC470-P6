@@ -102,5 +102,23 @@ namespace P6
             form.ShowDialog();
             form.Dispose();
         }
+
+        private void issuesRemoveToolStripMenuItem_Click(object sender, EventArgs e) {
+            FakePreferenceRepository preferenceRepository = new FakePreferenceRepository();
+            FakeIssueRepository issueRepository = new FakeIssueRepository();
+            int projectId = Int32.Parse(preferenceRepository.GetPreference(_CurrentAppUser.UserName, FakePreferenceRepository.PREFERENCE_PROJECT_ID));
+            FormSelectIssue form = new FormSelectIssue(projectId);
+            form.ShowDialog();
+            if(form.DialogResult == DialogResult.OK) {
+                Issue selectedIssue = form._SelectedIssue;
+                DialogResult result = MessageBox.Show("Are you sure you want to remove: " + selectedIssue.Title + "?", "Confirmation", MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes) {
+                    issueRepository.Remove(selectedIssue);
+                } else {
+                    MessageBox.Show("Remove cancelled.");
+                }
+            }
+            form.Dispose();
+        }
     }
 }

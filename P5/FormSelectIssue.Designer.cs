@@ -1,5 +1,5 @@
 ﻿
-namespace Builder {
+namespace P6 {
     partial class FormSelectIssue {
         /// <summary>
         /// Required designer variable.
@@ -24,7 +24,7 @@ namespace Builder {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSelector = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiscoveryDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -34,15 +34,15 @@ namespace Builder {
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonSelectIssue = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSelector)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewSelector
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewSelector.AllowUserToAddRows = false;
+            this.dataGridViewSelector.AllowUserToDeleteRows = false;
+            this.dataGridViewSelector.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSelector.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Title,
             this.DiscoveryDate,
@@ -50,13 +50,13 @@ namespace Builder {
             this.InitialDescription,
             this.Component,
             this.Status});
-            this.dataGridView1.Location = new System.Drawing.Point(17, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(959, 416);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewSelector.Location = new System.Drawing.Point(17, 20);
+            this.dataGridViewSelector.Name = "dataGridViewSelector";
+            this.dataGridViewSelector.ReadOnly = true;
+            this.dataGridViewSelector.RowHeadersWidth = 51;
+            this.dataGridViewSelector.RowTemplate.Height = 24;
+            this.dataGridViewSelector.Size = new System.Drawing.Size(959, 416);
+            this.dataGridViewSelector.TabIndex = 0;
             // 
             // Id
             // 
@@ -123,6 +123,7 @@ namespace Builder {
             this.buttonSelectIssue.TabIndex = 1;
             this.buttonSelectIssue.Text = "Select Issue";
             this.buttonSelectIssue.UseVisualStyleBackColor = true;
+            this.buttonSelectIssue.Click += new System.EventHandler(this.buttonSelectIssue_Click);
             // 
             // buttonCancel
             // 
@@ -143,18 +144,18 @@ namespace Builder {
             this.ClientSize = new System.Drawing.Size(995, 537);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSelectIssue);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewSelector);
             this.Name = "FormSelectIssue";
             this.Text = "FormSelectIssue";
             this.Load += new System.EventHandler(this.FormSelectIssue_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSelector)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewSelector;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Title;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiscoveryDate;
